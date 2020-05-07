@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaestra.master.cs" Inherits="Restaurante.PaginaMaestra" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="assets/css/main.css" />
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <!-- Header -->
+    <header id="header">
+        <div class="logo"><a href="index.aspx">La Lucha <span> Restaurante </span></a></div>
+        <a href="#menu">Menu</a>
+    </header>
+    <!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.aspx">Inicio</a></li>
+            <li><a href="#">Registrarse</a></li>
+            <li><a href="ListaProductos.aspx">Realizar un Pedido</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Contactenos</a></li>
+            <li><a href="#">Cerrar Sesion</a></li>
+
+        </ul>
+    </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            &copy;2020 -  La Lucha. All rights reserved.- Visitanos en Calle ARCE
+        </div>
+    </footer>
+        </div>
+    </form>
+
+</body>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</html>
